@@ -604,6 +604,68 @@ footer p { font-size: 0.85rem; color: var(--text-muted); }
       </div>
     </div>
 
+    <!-- ──── ACTIVE IR LINE-FOLLOWING ROBOT ──── -->
+    <div class="project-card animate-in" id="line-follower">
+      <div class="project-header">
+        <h3>Active IR Line-Following Robot</h3>
+        <p style="color:var(--accent-secondary);font-size:0.9rem;margin-bottom:0.5rem;">Experimental Physics &mdash; Team 3 &nbsp;|&nbsp; with Kirsten Davis &nbsp;|&nbsp; Spring 2026</p>
+        <p>Autonomous line-following robot built on an Arduino UNO R3 + HW-130 motor shield, driven by three 940&nbsp;nm active IR reflectance sensors. A 200&nbsp;Hz decision loop translates the L/C/R sensor pattern into asymmetric wheel speeds, producing smooth differential-drive arcs around curves. Iterated through three design revisions before reliable closed-loop tracking on electrical-tape tracks.</p>
+      </div>
+
+      <div class="tech-tags">
+        <span class="tech-tag">Arduino C++</span>
+        <span class="tech-tag">ATmega328P</span>
+        <span class="tech-tag">L293D H-Bridge</span>
+        <span class="tech-tag">IR Photodiode</span>
+        <span class="tech-tag">LM393 Comparator</span>
+        <span class="tech-tag">PWM</span>
+        <span class="tech-tag">Differential Drive</span>
+      </div>
+
+      <div class="stat-cards">
+        <div class="stat-card"><span class="stat-number">3</span><span class="stat-label">IR Sensors (L&middot;C&middot;R)</span></div>
+        <div class="stat-card"><span class="stat-number">200 Hz</span><span class="stat-label">Decision Rate</span></div>
+        <div class="stat-card"><span class="stat-number">940 nm</span><span class="stat-label">IR Wavelength</span></div>
+        <div class="stat-card"><span class="stat-number">7.4 V</span><span class="stat-label">2&times; 18650 Li-Ion</span></div>
+      </div>
+
+      <div class="project-images">
+        <img src="assets/ir_line_follower.jpg" alt="Active IR line-following robot on electrical tape track" class="project-img" loading="lazy">
+      </div>
+
+      <div class="project-subsection">
+        <h4>Sensing &mdash; Photons to Bits</h4>
+        <p>Each sensor module pairs a 940&nbsp;nm IR LED with a silicon photodiode and an LM393 comparator. Photon energy at 940&nbsp;nm (~1.32&nbsp;eV) clears silicon's 1.1&nbsp;eV band gap, so absorbed photons liberate electron&ndash;hole pairs in the reverse-biased junction. White paper (&rho;&nbsp;&asymp;&nbsp;0.87) returns roughly an order of magnitude more IR than black electrical tape (&rho;&nbsp;&asymp;&nbsp;0.08) &mdash; ample margin for the comparator to deliver a clean HIGH/LOW to the Arduino, with the threshold set by an onboard potentiometer.</p>
+      </div>
+
+      <div class="project-subsection">
+        <h4>Control Logic &mdash; Continuous Differential Drive</h4>
+        <p>The L/C/R sensor pattern indexes a 7-state action table: centered &rarr; straight, drifting &rarr; ease, line-on-side &rarr; sharp turn (inner wheels drop to 0), lost &rarr; search in last known direction, all-on &rarr; stop at intersection. Earlier revisions failed: two sensors (v1) couldn't measure drift magnitude and overshot every curve; a stop-read-pulse approach (v2) twitched in half-centimeter increments. The current continuous-differential approach (v3) produces smooth arcs.</p>
+        <table class="can-table">
+          <thead><tr><th>L</th><th>C</th><th>R</th><th>Meaning</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td>0</td><td>1</td><td>0</td><td>Centered</td><td>Drive straight</td></tr>
+            <tr><td>1</td><td>1</td><td>0</td><td>Drifting right</td><td>Ease left</td></tr>
+            <tr><td>0</td><td>1</td><td>1</td><td>Drifting left</td><td>Ease right</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>Line on left</td><td>Sharp left</td></tr>
+            <tr><td>0</td><td>0</td><td>1</td><td>Line on right</td><td>Sharp right</td></tr>
+            <tr><td>0</td><td>0</td><td>0</td><td>Lost line</td><td>Search last heading</td></tr>
+            <tr><td>1</td><td>1</td><td>1</td><td>Intersection</td><td>Stop</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="project-subsection">
+        <h4>Lessons &amp; Next Iteration</h4>
+        <p>Verify voltage against spec &mdash; a 4&times; 18650 pack at 14.8&nbsp;V exceeded the shield's 12&nbsp;V max and cost us a board. The HW-130 silently uses digital pins 4, 7, 8, and 12 through its onboard 74HC595 shift register; sensors on those pins returned garbage until I moved them to analog pins. Planned v3 upgrade: add an MPU-6050 6-axis IMU over I&sup2;C for closed-loop turn control, drift correction on long straights, and inertial dead-reckoning when all three IR sensors lose the line.</p>
+      </div>
+
+      <div class="download-row">
+        <a href="assets/IR_Line_Follower_Presentation.pdf" class="btn btn-outline" target="_blank">&#8595; Full Presentation (PDF)</a>
+        <a href="assets/IR_Line_Follower.ino" class="btn btn-outline" download>&#8595; Arduino Source (.ino)</a>
+      </div>
+    </div>
+
   </div>
 </section>
 

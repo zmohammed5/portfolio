@@ -12,6 +12,7 @@ B.S. Engineering Physics (Electrical Concentration), Fordham University — grad
 - **Flight Controller** — STM32 bare-metal firmware with PID control and sensor fusion
 - **FPGA Image Processing Accelerator** — Verilog systolic array on Xilinx Artix-7
 - **Lattice QCD Research** — Meson spectrum computation, Wiley textbook contribution
+- **Active IR Line-Following Robot** — Arduino + 3× 940 nm IR sensors with continuous differential drive
 
 ## Contact
 - Email: zeke.professional@gmail.com
