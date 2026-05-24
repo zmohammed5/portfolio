@@ -1,6 +1,8 @@
 # Zeke Mohammed — Engineering Portfolio
 
-Interactive portfolio website showcasing embedded systems, PCB design, vehicle electrical systems, and FPGA development projects.
+Interactive portfolio website showcasing embedded systems, PCB design, FPGA development, and 400–800 V DC high-voltage validation work.
+
+B.S. Engineering Physics (Electrical Concentration), Fordham University — graduated May 2026.
 
 **Live site:** [zmohammed5.github.io/portfolio](https://zmohammed5.github.io/portfolio/)
 

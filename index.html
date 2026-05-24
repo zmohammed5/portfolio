@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zeke Mohammed | Electrical Design Engineer</title>
-<meta name="description" content="Electrical Engineer portfolio — PCB design, embedded systems, CAN bus, vehicle electrical systems, FPGA development. Fordham University 2026.">
+<meta name="description" content="Electrical Engineer portfolio — PCB design, embedded systems, CAN bus, FPGA development, 400–800 V DC high-voltage validation. B.S. Engineering Physics, Fordham University 2026 graduate.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -323,7 +323,7 @@ footer p { font-size: 0.85rem; color: var(--text-muted); }
   <div class="container">
     <a href="#hero" class="nav-logo">Zeke<span>.</span></a>
     <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
+      <li><a href="#hero">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -342,7 +342,7 @@ footer p { font-size: 0.85rem; color: var(--text-muted); }
     <h1>Zeke Mohammed</h1>
     <div class="hero-title">Electrical Engineer | Embedded Systems | PCB Design</div>
     <p class="hero-subtitle">B.S. Engineering Physics (Electrical Concentration) | Fordham University | Class of 2026</p>
-    <p class="hero-tags">PCB Design &middot; Embedded Systems &middot; Vehicle Electrical Systems &middot; CAN Bus &middot; FPGA Development</p>
+    <p class="hero-tags">PCB Design &middot; Embedded Systems &middot; CAN Bus &middot; FPGA Development &middot; 400&ndash;800&nbsp;V DC HV Validation</p>
     <p class="hero-location">Queens, NY &nbsp;|&nbsp; U.S. Citizen</p>
     <div class="hero-links">
       <a href="https://github.com/zmohammed5" target="_blank">&#9783; GitHub</a>
@@ -360,7 +360,7 @@ footer p { font-size: 0.85rem; color: var(--text-muted); }
 <section id="projects">
   <div class="container">
     <div class="animate-in">
-      <div class="section-eyebrow">Featured Project</div>
+      <div class="section-eyebrow">Selected Work</div>
       <h2 class="section-title">Projects</h2>
       <div class="section-line"></div>
     </div>
@@ -369,7 +369,7 @@ footer p { font-size: 0.85rem; color: var(--text-muted); }
     <div class="project-card project-featured animate-in" id="yamaha">
       <div class="project-header">
         <h3>Yamaha ATV CAN Bus Sensor Node</h3>
-        <p>Production-ready PCB design package for a CAN Bus Sensor Node targeting Yamaha Grizzly ATV applications. Aggregates throttle position, coolant temperature, wheel speed, and battery voltage data, transmitting a consolidated CAN frame to the vehicle ECU at 10&nbsp;Hz over ISO&nbsp;11898 at 500&nbsp;kbaud.</p>
+        <p>Production-intent PCB design package for a CAN Bus Sensor Node targeting Yamaha Grizzly ATV applications. Aggregates throttle position, coolant temperature, wheel speed, and battery voltage data, transmitting a consolidated CAN frame to the vehicle ECU at 10&nbsp;Hz over ISO&nbsp;11898 at 500&nbsp;kbaud.</p>
       </div>
 
       <div class="tech-tags">
@@ -559,7 +559,7 @@ footer p { font-size: 0.85rem; color: var(--text-muted); }
           <img src="assets/textbook_cover.jpg" alt="High Energy Physics Essentials textbook" style="width:140px;border-radius:8px;border:1px solid var(--border-subtle);flex-shrink:0;" class="project-img">
           <div>
             <h3>Lattice QCD Research &mdash; Meson Spectrum from SU(2) Gauge Theory</h3>
-            <p style="color:var(--accent-secondary);font-size:0.9rem;margin-bottom:0.5rem;">Undergraduate Researcher &nbsp;|&nbsp; Advisor: Dr. Christopher Aubin, Fordham University &nbsp;|&nbsp; Aug 2024 &ndash; Present</p>
+            <p style="color:var(--accent-secondary);font-size:0.9rem;margin-bottom:0.5rem;">Undergraduate Researcher &nbsp;|&nbsp; Advisor: Dr. Christopher Aubin, Fordham University &nbsp;|&nbsp; Aug 2024 &ndash; May 2026</p>
             <p>First-principles computation of the meson mass spectrum using SU(2) lattice gauge theory on an 8&sup3;&times;20 lattice. Built the entire simulation pipeline from scratch in Python: gauge field generation via Metropolis and heatbath algorithms, construction and inversion of the 81,920&times;81,920 Wilson&ndash;Dirac operator using BiCGSTAB/GMRES solvers, and mass extraction via effective mass plateaus with jackknife error estimation.</p>
           </div>
         </div>
@@ -620,44 +620,54 @@ footer p { font-size: 0.85rem; color: var(--text-muted); }
       <div class="timeline-item">
         <h4>Hyzon Motors</h4>
         <div class="timeline-role">Electrical Engineering Intern</div>
-        <div class="timeline-date">Summer 2024 &nbsp;|&nbsp; Rochester, NY</div>
+        <div class="timeline-date">Jun 2024 &ndash; Aug 2024 &nbsp;|&nbsp; Rochester, NY</div>
         <ul>
-          <li>Characterized 200&nbsp;kW hydrogen fuel cell stacks via 50+ V-I polarization curve tests across varied temperature, humidity, and load conditions</li>
+          <li>Characterized 200&nbsp;kW hydrogen fuel cell stacks via V-I polarization curve tests across varied temperature, humidity, and load conditions</li>
           <li>HV system validation on 400&ndash;800&nbsp;V DC bus: hipot, insulation resistance, continuity testing per automotive standards</li>
-          <li>Monitored BMS telemetry over CAN bus (250&nbsp;kbps) during fuel cell&ndash;battery hybrid integration</li>
+          <li>Monitored BMS telemetry over CAN bus during fuel cell&ndash;battery hybrid integration testing; logged state-of-charge and thermal data</li>
           <li>Python post-processing: decomposed voltage losses into activation, ohmic, and mass transport components</li>
         </ul>
         <img src="assets/hyzon_vi_curve.png" alt="Hyzon fuel cell characterization" class="timeline-img" loading="lazy">
       </div>
 
       <div class="timeline-item">
-        <h4>Freelance Electronics Technician</h4>
-        <div class="timeline-role">Independent &mdash; 50+ Clients</div>
-        <div class="timeline-date">2020 &ndash; Present &nbsp;|&nbsp; Queens, NY</div>
-        <ul>
-          <li>Component-level repair, console modifications, custom PC builds, precision SMD soldering</li>
-          <li>Firmware flashing, hardware diagnostics, electrical schematics</li>
-          <li>Started at age 14 &mdash; 5.0/5.0 client rating, 50+ completed sessions</li>
-        </ul>
-      </div>
-
-      <div class="timeline-item">
         <h4>Fordham University</h4>
         <div class="timeline-role">Undergraduate Researcher &mdash; Lattice QCD</div>
-        <div class="timeline-date">Aug 2024 &ndash; Present</div>
+        <div class="timeline-date">Aug 2024 &ndash; May 2026 &nbsp;|&nbsp; Bronx, NY</div>
         <ul>
-          <li>SU(2) gauge theory simulation framework in Python with 81,920&times;81,920 sparse matrix solvers (BiCGSTAB)</li>
-          <li>Contributing editor for <em>High Energy Physics Essentials: A Guide to HEP Research</em> (Wiley) by Dr. Christopher Aubin &mdash; edited and developed content prior to publisher submission</li>
+          <li>SU(2) gauge theory simulation framework in Python with 81,920&times;81,920 sparse Wilson&ndash;Dirac operator (BiCGSTAB/GMRES); 200+ Monte Carlo configs</li>
+          <li>Generalized SU(2)&rarr;SU(N) with 3&times; runtime improvement</li>
+          <li>Contributing editor for <em>High Energy Physics Essentials</em> (Wiley, 2025) by Dr. Christopher Aubin; presented at CSTEP Symposium</li>
         </ul>
       </div>
 
       <div class="timeline-item">
         <h4>Fordham University</h4>
-        <div class="timeline-role">Teaching Assistant &amp; Lab Manager</div>
-        <div class="timeline-date">Aug 2023 &ndash; Present</div>
+        <div class="timeline-role">Teaching Assistant, Lab Instructor &amp; Lab Manager</div>
+        <div class="timeline-date">Aug 2023 &ndash; May 2026 &nbsp;|&nbsp; Bronx, NY</div>
         <ul>
-          <li>TA &amp; Lab Instructor: 30+ students, 120+ lab reports graded monthly</li>
-          <li>Lab Manager: 50-workstation instructional technology lab, 99%+ uptime</li>
+          <li>TA &amp; Lab Instructor: 30+ students in experimental physics; evaluated 120+ lab reports/month with technical feedback</li>
+          <li>Lab Manager: 50-workstation teaching lab, 99%+ uptime; 40% reduction in deployment time by scripting image deployment</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Airflow Cooling &amp; Heating Inc.</h4>
+        <div class="timeline-role">HVAC Electrical Technician</div>
+        <div class="timeline-date">Jun 2023 &ndash; Sep 2023 &nbsp;|&nbsp; Queens, NY</div>
+        <ul>
+          <li>Troubleshot electrical faults in HVAC systems; installed thermostat control systems and wired per electrical code</li>
+        </ul>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Freelance Electronics Technician</h4>
+        <div class="timeline-role">Self-Employed &mdash; 50+ Clients</div>
+        <div class="timeline-date">Jan 2020 &ndash; Present &nbsp;|&nbsp; Queens, NY</div>
+        <ul>
+          <li>Component-level SMD repair, console modifications, custom PC builds, precision soldering</li>
+          <li>Firmware flashing, hardware diagnostics, electrical schematics</li>
+          <li>5.0/5.0 client rating across 50+ completed jobs</li>
         </ul>
       </div>
     </div>
@@ -726,8 +736,8 @@ footer p { font-size: 0.85rem; color: var(--text-muted); }
     <div class="edu-card animate-in">
       <h3>Fordham University</h3>
       <p class="edu-degree">B.S. Engineering Physics (Electrical Concentration) &nbsp;|&nbsp; Minor in Mathematics</p>
-      <p class="edu-meta">Class of 2026 (3-year accelerated)</p>
-      <p class="edu-honors">Sarah Colman Klemmer Research Fellow &nbsp;|&nbsp; Sigma Xi &nbsp;|&nbsp; SIAM &nbsp;|&nbsp; CSTEP Scholar</p>
+      <p class="edu-meta">Graduated May 2026 &mdash; completed in 3 years while working 15&ndash;20 hrs/week in research and teaching roles</p>
+      <p class="edu-honors">Sarah Colman Klemmer Research Fellow &nbsp;|&nbsp; Sigma Xi Honor Society &nbsp;|&nbsp; CSTEP Scholar &nbsp;|&nbsp; SIAM</p>
       <div class="tech-tags" style="margin-top:1rem;">
         <span class="tech-tag">Electricity &amp; Magnetism I/II</span>
         <span class="tech-tag">Quantum Mechanics</span>
@@ -735,6 +745,46 @@ footer p { font-size: 0.85rem; color: var(--text-muted); }
         <span class="tech-tag">Control Systems</span>
         <span class="tech-tag">Linear Algebra</span>
         <span class="tech-tag">Multivariable Calculus</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════ LEADERSHIP & ACTIVITIES ═══════════════════════════════ -->
+<section id="leadership">
+  <div class="container">
+    <div class="animate-in">
+      <div class="section-eyebrow">Beyond the Bench</div>
+      <h2 class="section-title">Leadership &amp; Activities</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="mini-cards animate-in">
+      <div class="mini-card">
+        <h4>Fordham Rocket Propulsion Lab</h4>
+        <p style="color:var(--accent-secondary);font-size:0.8rem;margin-bottom:0.5rem;">Co-Founder &nbsp;|&nbsp; Sept 2024 &ndash; May 2026</p>
+        <p>Co-founded the lab from the ground up. Led propulsion design, thrust calculations, trajectory modeling, and safety analysis; Fusion 360 CAD and fabrication.</p>
+        <div class="tech-tags" style="margin-top:0.75rem;">
+          <span class="tech-tag">Fusion 360</span><span class="tech-tag">Propulsion</span><span class="tech-tag">Trajectory Modeling</span>
+        </div>
+      </div>
+
+      <div class="mini-card">
+        <h4>Physics &amp; Math Tutor &mdash; Knack</h4>
+        <p style="color:var(--accent-secondary);font-size:0.8rem;margin-bottom:0.5rem;">Tutor &nbsp;|&nbsp; June 2024 &ndash; Present</p>
+        <p>1-on-1 tutoring across introductory and upper-division physics and mathematics. 5.0/5.0 rating across 50+ sessions.</p>
+        <div class="tech-tags" style="margin-top:0.75rem;">
+          <span class="tech-tag">Physics</span><span class="tech-tag">Mathematics</span><span class="tech-tag">5.0/5.0</span>
+        </div>
+      </div>
+
+      <div class="mini-card">
+        <h4>Fordham Physics Society</h4>
+        <p style="color:var(--accent-secondary);font-size:0.8rem;margin-bottom:0.5rem;">Member &nbsp;|&nbsp; Sept 2023 &ndash; May 2026</p>
+        <p>Active member supporting departmental events, peer mentorship, and research talks throughout undergraduate program.</p>
+        <div class="tech-tags" style="margin-top:0.75rem;">
+          <span class="tech-tag">Community</span><span class="tech-tag">Mentorship</span>
+        </div>
       </div>
     </div>
   </div>
@@ -803,7 +853,7 @@ footer p { font-size: 0.85rem; color: var(--text-muted); }
       </div>
       <div class="contact-item">
         <div class="contact-icon">&#10003;</div>
-        <div><div class="contact-label">Availability</div><div class="contact-value">Available to relocate &nbsp;|&nbsp; Start: End of May 2026</div></div>
+        <div><div class="contact-label">Availability</div><div class="contact-value">Available immediately &nbsp;|&nbsp; Open to relocation</div></div>
       </div>
     </div>
   </div>
